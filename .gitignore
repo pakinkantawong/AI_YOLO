@@ -1,0 +1,33 @@
+# Python environments and caches
+env/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Local datasets, annotations, and training output
+/dataset/
+/images/
+/videos/
+/runs/
+/weights/
+/project-*-at-*.json
+
+# Model weights and video assets
+*.pt
+*.onnx
+*.[mM][oO][vV]
+*.[mM][pP]4
+*.[aA][vV][iI]
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
