@@ -11,13 +11,19 @@ __pycache__/
 .env.*
 !.env.example
 
-# Local datasets, annotations, and training output
-/dataset/
-/images/
+# Raw source videos and generated caches
 /videos/
-/runs/
-/weights/
+*.cache
+
+# Raw annotation exports contain personal account metadata
 /project-*-at-*.json
+
+# Generated prediction output and training previews
+/runs/detect/
+/runs/**/train_batch*.jpg
+/runs/**/val_batch*.jpg
+/runs/**/labels.jpg
+/runs/**/events.out.tfevents.*
 
 # Model weights and video assets
 *.pt
@@ -25,6 +31,12 @@ __pycache__/
 *.[mM][oO][vV]
 *.[mM][pP]4
 *.[aA][vV][iI]
+
+# Base models, best experiment checkpoints, and the test video
+!/yolo26s.pt
+!/weights/yolo26n.pt
+!/runs/*/weights/best.pt
+!/tests/IMG_7195.MOV
 
 # Editor and OS files
 .idea/

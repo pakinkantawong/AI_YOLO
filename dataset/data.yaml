@@ -1,0 +1,9 @@
+path: D:/AI_YOLO/dataset
+train: images/train
+val: images/val
+
+names:
+  0: 1baht
+  1: 2baht
+  2: 5baht
+  3: 10baht
