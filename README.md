@@ -135,6 +135,10 @@ python -m venv env
 
 Repository มี dataset ที่แบ่งแล้ว หากต้องการสร้างใหม่ ให้วาง JSON export จาก Label Studio ที่โฟลเดอร์หลักและเตรียมภาพใน `images/` ตาม path ใน annotation ก่อนรันคำสั่งต่อไปนี้ ซึ่งจะ **ลบและสร้างโฟลเดอร์ `dataset/` ใหม่**:
 
+## ตัวอย่างผลลัพธ์
+<img width="1920" height="1080" alt="frame_0010" src="https://github.com/user-attachments/assets/c37fd86b-3aed-4e64-ac38-d23da1484907" />
+
+
 ```powershell
 .\env\Scripts\python.exe 01-export_dataset.py
 ```
